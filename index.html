@@ -1,1 +1,1272 @@
-<h1>bb</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="icono.svg" type="image/x-icon">
+  <title>Siera mont</title>
+  <style>
+   /* Estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: MAREGY;
+}
+
+/* Estilos del navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(16, 30, 20, 0.9);
+  color: #f8ecc9;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar .logo img {
+  width: 200px; 
+  height: auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu li a {
+  color: #f8ecc9;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+/* Animación al pasar el mouse */
+.menu li a:hover {
+  color: #869180;
+}
+
+/* Menú hamburguesa */
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  color: #f8ecc9;
+  cursor: pointer;
+}
+
+/* Responsividad para mobile */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(16, 30, 20, 0.9);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
+
+/* Estilos de las secciones */
+section {
+  padding: 100px 20px;
+  text-align: center;
+  height: 100vh;
+  background-color: #101e14;
+}
+/* Estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: MAREGY;
+}
+
+/* Estilo del contenedor del banner */
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.banner-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+	  /* Estilo base (para pantallas grandes como PC) */
+.mi-seccion-2 {
+    background-image: url("fondo-pc-2.png"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+/* Para tablets (pantallas entre 768px y 1024px) */
+@media (max-width: 1024px) {
+    .mi-seccion-2 {
+        background-image: url("fondo-tablet-2.png");
+        height: auto;
+    }
+}
+
+/* Para celulares (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    .mi-seccion-2 {
+        background-image: url("fondo-cel-2.png"); 
+        height: auto; 
+    }
+}
+/* Estilo base (para pantallas grandes como PC) */
+.mi-seccion {
+    background-image: url("prueba-pc.png"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+/* Para tablets (pantallas entre 768px y 1024px) */
+@media (max-width: 1024px) {
+    .mi-seccion {
+        background-image: url("fondo-tablet-1.png"); 
+        height: auto;
+    }
+}
+
+/* Para celulares (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    .mi-seccion {
+        background-image: url("fondo-cel-1.png"); 
+        height: auto;
+    }
+}
+/* Estilo base (para pantallas grandes como PC) */
+.mi-seccion-3 {
+    background-image: url("fondo-pc-4.png"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+/* Para tablets (pantallas entre 768px y 1024px) */
+@media (max-width: 1024px) {
+    .mi-seccion-3 {
+        background-image: url("fondo-tablet-4.png"); 
+        height: auto;
+    }
+}
+
+/* Para celulares (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    .mi-seccion-3 {
+        background-image: url("fondo-cel-4.png"); 
+        height: auto;
+    }
+}/* Estilo base (para pantallas grandes como PC) */
+.mi-seccion-4 {
+    background-image: url("fondo-pc-5.png"); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+/* Para tablets (pantallas entre 768px y 1024px) */
+@media (max-width: 1024px) {
+    .mi-seccion-4 {
+        background-image: url("fondo-tablet-5.png"); 
+        height: auto;
+    }
+}
+
+/* Para celulares (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    .mi-seccion-4 {
+        background-image: url("fondo-cel-5.png"); 
+        height: auto;
+    }
+}
+
+/* Imágenes del banner */
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  object-position: center;
+}
+
+/* Responsividad: PC */
+@media (min-width: 1024px) {
+  .banner {
+    content: url("portada-pc.png"); 
+  }
+}
+
+/* Responsividad: Tablet */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .banner {
+    content: url("portada-tablet.png"); 
+  }
+}
+
+/* Responsividad: Mobile */
+@media (max-width: 768px) {
+  .banner {
+    content: url("portada-cel.png");
+  }
+}
+/* seccion nosotros */
+	 .nosotros-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: RGB(0, 0, 0, 0,);
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #f8ecc9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+	  .sobre-nosotros {
+    background-color: rgba(16,30,20,0.81);
+}
+	  
+.sobre-nosotros h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #f8ecc9;
+}
+
+.sobre-nosotros p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f8ecc9;
+    max-width: 800px;
+    margin: 0 auto;
+}  
+	
+	  /* seccion mapa */
+	.mapa-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: rgba(248,236,201,0.60);
+    gap: 10px;
+}
+
+.texto-mapa {
+
+    flex: 1;
+    max-width: 500px;
+	margin-right: 10px;
+}
+
+.texto-mapa h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #101e14;
+}
+
+.texto-mapa h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #101e14;
+}
+
+.texto-mapa p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #101e14;
+}
+
+.mapa {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+	 margin-left: 10px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 600px;
+}
+
+/* Para tablets (pantallas entre 768px y 1024px) */
+@media (max-width: 1024px) {
+    .mapa iframe {
+        height: 450px;
+    }
+}
+
+/* Para celulares (pantallas menores a 768px) */
+@media (max-width: 768px) {
+    .mapa iframe {
+        height: 200px;
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .mapa-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .texto-mapa {
+        max-width: none;
+    }
+
+    .mapa {
+        max-width: none;
+    }
+}
+ .service-color {
+    background-color: #f8ecc9;
+	 }
+	      /* Estilos para el botón flotante */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px; 
+      right: 20px;  
+      width: 60px;  
+      height: 60px;
+      background-color: #686a61; 
+      border-radius: 50%; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000; 
+      cursor: pointer;
+      animation: pulse 1.5s infinite; 
+    }
+
+    .whatsapp-button img {
+      width: 35px; 
+      height: 35px;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #686a61; 
+    }
+
+   
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+      50% {
+        transform: scale(1.1); 
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      }
+    }
+	  
+/* Estilo general */
+
+.interactive-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Fondos */
+.background, .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.background {
+    background-image: url('fondo-pc-3.png');
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0); 
+    z-index: 2;
+}
+
+/* Título */
+.section-title {
+    position: relative;
+    z-index: 3;
+    color: #f8ecc9;
+    font-size: 2rem;
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Círculos interactivos */
+.circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #686a61;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* Posiciones específicas por dispositivo */
+/* Estilo por defecto (PC) */
+#circle1 { top: 40%; left: 43%; }
+#circle2 { top: 42%; left: 46%; }
+#circle3 { top: 46%; left: 49%; }
+#circle4 { top: 46.3%; left: 45%; }
+#circle5 { top: 73%; left: 44%; }
+
+/* Estilos para tablet */
+
+@media (max-width: 1682px) {
+    .background {
+        background-image: url("fondo-pc-3.png");
+    }
+#circle1 { top: 40%; left: 42%; }
+#circle2 { top: 42%; left: 45.5%; }
+#circle3 { top: 46%; left: 49%; }
+#circle4 { top: 46.3%; left: 44.5%; }
+#circle5 { top: 70%; left: 44%; }
+}
+	  @media (max-width: 1513px) {
+    .background {
+        background-image: url("fondo-pc-3.png");
+    }
+#circle1 { top: 40%; left: 41%; }
+#circle2 { top: 42%; left: 44%; }
+#circle3 { top: 46%; left: 49%; }
+#circle4 { top: 46.3%; left: 44%; }
+#circle5 { top: 71%; left: 42%; }
+}
+	  @media (max-width: 1285px) {
+    .background {
+        background-image: url("fondo-pc-3.png");
+    }
+#circle1 { top: 40%; left: 40.5%; }
+#circle2 { top: 42%; left: 44%; }
+#circle3 { top: 46%; left: 49%; }
+#circle4 { top: 46.3%; left: 43%; }
+#circle5 { top: 71%; left: 42%; }
+}
+	  @media (max-width: 1071px) {
+    .background {
+        background-image: url("fondo-pc-3.png");
+    }
+#circle1 { top: 40%; left: 39%; }
+#circle2 { top: 42%; left: 43%; }
+#circle3 { top: 46%; left: 48%; }
+#circle4 { top: 46.3%; left: 43%; }
+#circle5 { top: 71%; left: 40%; }
+}
+	  
+/* Estilos para tablet */
+	  
+	  @media (max-width: 1024px) {
+    .background {
+        background-image: url('fondo-tablet-3.png');
+    }
+#circle1 { top: 39%; left: 42%; }
+#circle2 { top: 41%; left: 46%; }
+#circle3 { top: 45%; left: 51%; }
+#circle4 { top: 45.3%; left: 45%; }
+#circle5 { top: 69%; left: 43%; }
+}
+
+/* Estilos para móvil */
+@media (max-width: 768px) {
+    .background {
+        background-image: url('fondo-cel-3.png');
+    }
+#circle1 { top: 39%; left: 40%; }
+#circle2 { top: 41%; left: 46%; }
+#circle3 { top: 43%; left: 51.5%; }
+#circle4 { top: 44.3%; left: 45%; }
+#circle5 { top: 60%; left: 41%; }
+}
+
+/* Popups */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #f8ecc9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 90%;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.popup-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* Animación de palpitación */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Aplicación del efecto a los círculos */
+.circle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #0c261b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    z-index: 3;
+
+    /* Propiedad de animación */
+    animation: pulse 1.5s infinite ease-in-out;
+}
+/*seccion iconos*/
+/* Fondo por defecto (para pantallas grandes) */
+.iconos-seccion {
+  text-align: center;
+  padding: 50px 10px;
+  background-image: url('fondo-pc-2.png'); /* Fondo para PC */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Fondo para tablet */
+@media (max-width: 1024px) {
+  .iconos-seccion {
+    background-image: url('fondo-tablet-2.png'); /* Fondo para tablet */
+  }
+}
+
+/* Fondo para móvil */
+@media (max-width: 768px) {
+  .iconos-seccion {
+    background-image: url('fondo-cel-2.png'); /* Fondo para móvil */
+  }
+}
+
+.iconos-seccion h2 {
+  font-size: 2rem;
+  color: #0c261b; /* Cambiar color de texto para que sea legible en el fondo */
+  margin-bottom: 30px;
+}
+
+.iconos-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.icono img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.icono p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #f8ecc9;	
+}
+	  #visor_imagenes {
+  text-align: center;
+  color: #f8ecc9;
+  background-color: #0c261b;
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .iconos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 480px) {
+  .iconos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .iconos-seccion h2 {
+    font-size: 1.5rem;
+  }
+
+  .icono img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icono p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 768px) {
+  .iconos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 480px) {
+  .iconos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .iconos-seccion h2 {
+    font-size: 1.5rem;
+  }
+
+  .icono img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .icono p {
+    font-size: 0.9rem;
+  }
+}
+	  
+	  /*area seleccionada*/
+	   
+/* Contenedor principal */
+.unique-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Contenedor de la imagen */
+.unique-image-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Imagen */
+.unique-image {
+    width: 120%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Áreas resaltadas */
+.unique-highlight {
+    position: absolute;
+    pointer-events: none;
+    display: none;
+}
+
+.unique-highlight-red {
+    top: 5%;
+    left: 2%;
+    width: 100%;
+    height: 45%;
+    background-color: rgba(125, 137, 109, 0.5);
+}
+
+.unique-highlight-blue {
+    top: 50%;
+    left: 65%;
+    width: 110%;
+    height: 45%;
+    transform: translateX(-50%);
+    background-color: rgba(194, 194, 172, 0.5);
+}
+
+/* Botones */
+.unique-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+	margin-left: 73px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.unique-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px; /* Puntas redondeadas */
+    background-color: #7d896d; /* Verde vibrante */
+    color: #000; /* Texto blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover y active */
+.unique-button:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el ratón */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Aumenta la sombra */
+}
+
+.unique-button:active {
+    background-color: #1e7e34; /* Verde más oscuro al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce la sombra */
+}
+
+.unique-button2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px; /* Puntas redondeadas */
+    background-color: #c2c2ac; /* Verde vibrante */
+    color: #000; /* Texto blanco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto hover y active */
+.unique-button2:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el ratón */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Aumenta la sombra */
+}
+
+.unique-button2:active {
+    background-color: #1e7e34; /* Verde más oscuro al hacer clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce la sombra */
+}
+
+/* Estilos responsivos */
+@media (min-width: 768px) {
+    .unique-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+		
+    }
+
+    .unique-buttons {
+        margin-top: 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+	  
+	  /* Contenedor principal del slider */
+.gallery-slider-container {
+    position: relative;
+    width: 80vw; /* Ajusta el tamaño según sea necesario */
+    max-width: 1200px;
+    height: 45vw; /* 16:9 ratio, ajustado al 80% de la vista */
+    overflow: hidden;
+}
+
+/* Contenedor de las imágenes */
+.gallery-slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo de las imágenes dentro del slider */
+.gallery-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que las imágenes mantengan la relación 16:9 */
+}
+
+/* Botones de navegación */
+.gallery-prev, .gallery-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.gallery-prev {
+    left: 10px;
+}
+
+.gallery-next {
+    right: 10px;
+}
+
+/* Efecto hover en los botones */
+.gallery-prev:hover, .gallery-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+	  
+	  /* Estilos para el Footer */
+.footer {
+  background-color: #f8ecc9;
+  color: #101e14;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  width: 150px; /* Tamaño del logo */
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link {
+  color: #101e14;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-link i {
+  font-size: 18px;
+}
+
+.footer-link:hover {
+  color: #869180; /* Color al pasar el ratón */
+  color: #869180; /* Color al pasar el ratón */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+	</style>
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <header>
+  <nav class="navbar">
+    <a href="#home" class="logo">
+      <img src="logo.png" alt="Logo" />
+    </a>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    <ul class="menu">
+      <li><a href="#about">Nosotros</a></li>
+      <li><a href="#services">Ubicación</a></li>
+      <li><a href="#contact">Zonas</a></li>
+      <li><a href="#espacios">Espacios</a></li>
+      <li><a href="#select">Etapas</a></li>
+      <li><a href="#galery">Galeria</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- Botón flotante -->
+  <a href="https://wa.me/52XXXXXXXXXX" target="_blank" class="whatsapp-button" aria-label="Chat en WhatsApp">
+    <img src="wsp_1.svg" alt="WhatsApp">
+  </a>
+  <!-- Secciones de ejemplo -->
+  <section id="home">
+  <div class="banner-container">
+    <img src="banner-pc.jpg" alt="Banner Inicio" class="banner">
+  </div>
+</section>
+
+  <section id="about" class="mi-seccion">
+<div class="nosotros-section">
+    <div class="card-container">
+        <div class="card">
+            <img src="lot.svg" alt="Icono Lotes Amplios">
+            <h3>Lotes Amplios</h3>
+      </div>
+        <div class="card">
+            <img src="pago.svg" alt="Icono Pagos a tu medida">
+            <h3>Pagos a tu medida</h3>
+        </div>
+        <div class="card">
+            <img src="doc.svg" alt="Icono Tu Lote, tus documentos">
+            <h3>Tu Lote, tus documentos</h3>
+        </div>
+    </div>
+    <div class="sobre-nosotros"><br>
+
+        <h2>Sobre Nosotros</h2>
+        <p>
+            En Siera Mont, nos dedicamos a ofrecer oportunidades únicas de inversión en lotes ubicados cerca de Valledupar. Nuestro compromiso es brindar a nuestros clientes un servicio personalizado y transparente.
+            Nos apasiona ayudar a las personas a encontrar el espacio perfecto para construir sus sueños, ya sea una casa de vacaciones, una finca o una inversión a largo plazo. Cada uno de nuestros lotes ha sido cuidadosamente seleccionado, garantizando no solo calidad, sino también un entorno seguro y en crecimiento.
+        </p><br>
+
+    </div>
+    </div>
+  </section>
+  <section id="services" class="mi-seccion-2">
+		   <div class="mapa-section">
+
+    <div class="texto-mapa">
+        <h2>Explora Nuestros Lotes Disponibles</h2>
+        <h3>Ubicación Estratégica para Tu Futuro</h3>
+        <p>
+            Descubre los terrenos ideales para construir la casa de tus sueños o realizar una inversión segura. 
+            Nuestros lotes están situados en áreas de gran crecimiento, con fácil acceso a servicios y comodidades.
+        </p>
+    </div>
+    <div class="mapa">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4867.142678844157!2d-73.1900833!3d10.554555599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDMzJzE2LjQiTiA3M8KwMTEnMjQuMyJX!5e1!3m2!1ses-419!2sco!4v1731706582717!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+			    </div>
+
+  </section>
+  <section id="contact" class="interactive-section">
+        <div class="background"></div>
+        <div class="overlay"></div>
+        
+        <!-- Título -->
+        <h1 class="section-title">Zonas importantes</h1>
+
+        <!-- Círculos interactivos -->
+        <div class="circle" id="circle1" data-popup="popup1"></div>
+        <div class="circle" id="circle2" data-popup="popup2"></div>
+        <div class="circle" id="circle3" data-popup="popup3"></div>
+        <div class="circle" id="circle4" data-popup="popup4"></div>
+        <div class="circle" id="circle5" data-popup="popup5"></div>
+    </section>
+
+    <!-- Popups -->
+    <div class="popup" id="popup1">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <img src="lago.png" alt="Imagen 1">
+        </div>
+    </div>
+    <div class="popup" id="popup2">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <img src="cancha.png" alt="Imagen 2">
+        </div>
+    </div>
+	<div class="popup" id="popup3">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <img src="tenis.png" alt="Imagen 2">
+        </div>
+    </div>
+	<div class="popup" id="popup4">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <img src="capilla.png" alt="Imagen 2">
+        </div>
+    </div>
+	<div class="popup" id="popup5">
+        <div class="popup-content">
+            <span class="close-btn">&times;</span>
+            <img src="porteria.png" alt="Imagen 2">
+        </div>
+    </div>
+<section id="espacios" class="iconos-seccion">
+  <h2>Contamos con espacios para ti.</h2>
+  <div class="iconos-container">
+    <div class="icono">
+      <img src="tenis.gif" alt="Icono 1">
+      <p id='visor_imagenes'> Cancha de <br>
+tenis </p>
+    </div>
+    <div class="icono">
+      <img src="bola.gif" alt="Icono 2">
+      <p id='visor_imagenes'> Cancha <br>
+múltiple </p>
+    </div>
+    <div class="icono">
+      <img src="yoga.gif" alt="Icono 3">
+      <p id='visor_imagenes'> Zonas <br>
+deportivas </p>
+    </div>
+    <div class="icono">
+      <img src="lago.gif" alt="Icono 4">
+      <p id='visor_imagenes'>Lago</p>
+    </div>
+    <div class="icono">
+      <img src="correr2.gif" alt="Icono 5">
+      <p id='visor_imagenes'>Sendero <br>
+peatonal</p>
+    </div>
+    <div class="icono">
+      <img src="parque.gif" alt="Icono 6">
+      <p id='visor_imagenes'>Parque <br>
+infantil</p>
+    </div>
+    <div class="icono">
+      <img src="bosque.gif" alt="Icono 7">
+      <p id='visor_imagenes'>Amplias zonas<br>
+ verdes</p>
+    </div>
+    <div class="icono">
+      <img src="iglesia.gif" alt="Icono 8">
+      <p id='visor_imagenes'>Capilla</p>
+    </div>
+    <div class="icono">
+      <img src="levantar.gif" alt="Icono 9">
+      <p id='visor_imagenes'>Gimnasio Bio <br>
+Saludable</p>
+    </div>
+  </div>
+	</section>
+	
+	<section id="select" class="mi-seccion-3">
+		 <div class="unique-container">
+        <div class="unique-image-wrapper">
+            <img src="etapa.png" alt="Imagen de ejemplo" class="unique-image">
+            <div class="unique-highlight unique-highlight-red"></div>
+            <div class="unique-highlight unique-highlight-blue"></div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="unique-buttons">
+            <button class="unique-button" onclick="showUniqueHighlight('red')">ETAPA1</button>
+            <button class="unique-button2" onclick="showUniqueHighlight('blue')">ETAPA2</button>
+        </div>
+    </div>
+	</section>
+	<section id="galery" class="mi-seccion-4">
+		 <div class="gallery-slider-container">
+        <div class="gallery-slider">
+            <img src="SM FINALES OCT_1 - Photo.jpg" alt="Imagen 1" class="gallery-slide">
+            <img src="SM FINALES OCT_6 - foto.jpg" alt="Imagen 2" class="gallery-slide">
+            <img src="SM FINALES OCT_4 - foto.jpg" alt="Imagen 3" class="gallery-slide">
+            <img src="SM FINALES OCT_3 - foto.jpg" alt="Imagen 4" class="gallery-slide">
+            <img src="SM FINALES OCT_7 - foto.jpg" alt="Imagen 5" class="gallery-slide">
+        </div>
+        <button class="gallery-prev" id="prev-btn">&#10094;</button>
+        <button class="gallery-next" id="next-btn">&#10095;</button>
+    </div>
+	</section>
+	<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="logo 2.svg" alt="Logo">
+    </div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com" target="_blank" class="footer-link">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="https://www.facebook.com" target="_blank" class="footer-link">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a>
+      <a href="mailto:correo@dominio.com" class="footer-link">
+        <i class="fas fa-envelope"></i> Correo
+      </a>
+      <a href="https://wa.me/11234567890" target="_blank" class="footer-link">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+</footer>
+  <script>
+   function toggleMenu() {
+  document.querySelector('.menu').classList.toggle('show');
+}
+document.querySelectorAll('.circle').forEach(circle => {
+    circle.addEventListener('click', () => {
+        const popupId = circle.getAttribute('data-popup');
+        document.getElementById(popupId).style.display = 'flex';
+    });
+});
+
+document.querySelectorAll('.popup').forEach(popup => {
+    popup.addEventListener('click', (e) => {
+        if (e.target.classList.contains('popup') || e.target.classList.contains('close-btn')) {
+            popup.style.display = 'none';
+        }
+    });
+});
+	   function showUniqueHighlight(color) {
+            // Oculta todas las áreas resaltadas únicas
+            document.querySelectorAll('.unique-highlight').forEach(area => area.style.display = 'none');
+
+            // Muestra el área seleccionada
+            const area = document.querySelector(`.unique-highlight-${color}`);
+            if (area) {
+                area.style.display = 'block';
+            }
+        }
+	  
+	  let currentSlide = 0; // Índice de la imagen actual
+const slides = document.querySelectorAll('.gallery-slide');
+const totalSlides = slides.length;
+
+const prevButton = document.getElementById('prev-btn');
+const nextButton = document.getElementById('next-btn');
+
+// Función para mostrar la imagen actual
+function showSlide(index) {
+    // Evitar desbordamientos
+    if (index < 0) {
+        currentSlide = totalSlides - 1; // Volver a la última imagen
+    } else if (index >= totalSlides) {
+        currentSlide = 0; // Volver a la primera imagen
+    } else {
+        currentSlide = index;
+    }
+
+    // Mover el slider
+    const offset = -currentSlide * 100; // Desplazar las imágenes horizontalmente
+    document.querySelector('.gallery-slider').style.transform = `translateX(${offset}%)`;
+}
+
+// Event listeners para los botones
+prevButton.addEventListener('click', () => {
+    showSlide(currentSlide - 1); // Mostrar la imagen anterior
+});
+
+nextButton.addEventListener('click', () => {
+    showSlide(currentSlide + 1); // Mostrar la siguiente imagen
+});
+
+// Iniciar el slider mostrando la primera imagen
+showSlide(currentSlide);
+
+  </script>
+</body>
+</html>
