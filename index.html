@@ -743,131 +743,95 @@ body {
   }
 }
 	  
-	  /*area seleccionada*/
-	   
-/* Contenedor principal */
-.unique-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 700px;
-    padding: 20px;
-    box-sizing: border-box;
+	 /*areas*/
+	  .container-11 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-/* Contenedor de la imagen */
-.unique-image-wrapper {
-    position: relative;
-    width: 100%;
+.image-container-11 {
+  position: relative;
+  width: 500px;
+  height: 500px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+	animation: containerPulse 1.5s infinite;
 }
 
-/* Imagen */
-.unique-image {
-    width: 120%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+.image-11 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* Áreas resaltadas */
-.unique-highlight {
-    position: absolute;
-    pointer-events: none;
-    display: none;
+.square-11 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(264, 221, 204, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 06px; /* Tamaño de la letra */
+  color: #111e15;
+  font-weight: bold;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out, background-color 0.3s ease;
+  text-align: center;
+  border-radius: 50%; /* Círculos */
+
+  /* Animación de palpitación */
+  animation: pulse 1.5s infinite;
 }
 
-.unique-highlight-red {
-    top: 5%;
-    left: 2%;
-    width: 100%;
-    height: 45%;
-    background-color: rgba(125, 137, 109, 0.5);
+.square-11[data-letter]:hover {
+  transform: scale(1.5);
+  background-color: #111e15; /* Cambia el color de fondo al pasar el mouse */
+  color: #eaddcc; /* Cambia el color de la letra al pasar el mouse */
 }
 
-.unique-highlight-blue {
-    top: 50%;
-    left: 65%;
-    width: 110%;
-    height: 45%;
-    transform: translateX(-50%);
-    background-color: rgba(194, 194, 172, 0.5);
+.square-11[data-letter] {
+  opacity: 1;
 }
 
-/* Botones */
-.unique-buttons {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
-	margin-left: 73px;
-    flex-wrap: wrap;
-    justify-content: center;
+.square-11 {
+  font-size: 16px;  /* Tamaño ajustado de la letra */
+  color: black; /* Color de la letra */
+  font-weight: bold; /* Asegura que la letra sea negrita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.unique-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 25px; /* Puntas redondeadas */
-    background-color: #7d896d; /* Verde vibrante */
-    color: #000; /* Texto blanco */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
-
-/* Efecto hover y active */
-.unique-button:hover {
-    background-color: #218838; /* Verde más oscuro al pasar el ratón */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Aumenta la sombra */
+@keyframes containerPulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño del contenedor */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5); /* Sombra más grande */
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
 }
-
-.unique-button:active {
-    background-color: #1e7e34; /* Verde más oscuro al hacer clic */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce la sombra */
-}
-
-.unique-button2 {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 25px; /* Puntas redondeadas */
-    background-color: #c2c2ac; /* Verde vibrante */
-    color: #000; /* Texto blanco */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Efecto hover y active */
-.unique-button2:hover {
-    background-color: #218838; /* Verde más oscuro al pasar el ratón */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Aumenta la sombra */
-}
-
-.unique-button2:active {
-    background-color: #1e7e34; /* Verde más oscuro al hacer clic */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduce la sombra */
-}
-
-/* Estilos responsivos */
-@media (min-width: 768px) {
-    .unique-container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-		
-    }
-
-    .unique-buttons {
-        margin-top: 0;
-        flex-direction: column;
-        gap: 20px;
-    }
-}
-
 	  
 	  /* Contenedor principal del slider */
 .gallery-slider-container {
@@ -1157,17 +1121,22 @@ Saludable</p>
 	</section>
 	
 	<section id="select" class="mi-seccion-3">
-		 <div class="unique-container">
-        <div class="unique-image-wrapper">
-            <img src="etapa.png" alt="Imagen de ejemplo" class="unique-image">
-            <div class="unique-highlight unique-highlight-red"></div>
-            <div class="unique-highlight unique-highlight-blue"></div>
-        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div class="unique-buttons">
-            <button class="unique-button" onclick="showUniqueHighlight('red')">ETAPA1</button>
-            <button class="unique-button2" onclick="showUniqueHighlight('blue')">ETAPA2</button>
-        </div>
-    </div>
+		<div class="container-11">
+  <div class="image-container-11">
+    <img src="prueba.png" alt="Imagen" class="image-11">
+    <div class="square-11" style="top: 368px; left: 172px;" data-letter="A">A</div>
+    <div class="square-11" style="top: 411.5px; left: 326.5px;" data-letter="B">B</div>
+    <div class="square-11" style="top: 304.5px; left: 172px;" data-letter="C">C</div>
+    <div class="square-11" style="top: 346.5px; left: 326.5px;" data-letter="D">D</div>
+    <div class="square-11" style="top: 237px; left: 172px;" data-letter="E">E</div>
+    <div class="square-11" style="top: 278px; left: 326.5px;" data-letter="F">F</div>
+    <div class="square-11" style="top: 168px; left: 148.5px;" data-letter="G">G</div>
+    <div class="square-11" style="top: 207px; left: 292px;" data-letter="H">H</div>
+    <div class="square-11" style="top: 90px; left: 138px;" data-letter="I">I</div>
+    <div class="square-11" style="top: 117px; left: 238px;" data-letter="J">J</div>
+    <div class="square-11" style="top: 59px; left: 213px;" data-letter="K">K</div>
+  </div>
+</div>
 	</section>
 	<section id="galery" class="mi-seccion-4">
 		 <div class="gallery-slider-container">
@@ -1220,18 +1189,7 @@ document.querySelectorAll('.popup').forEach(popup => {
             popup.style.display = 'none';
         }
     });
-});
-	   function showUniqueHighlight(color) {
-            // Oculta todas las áreas resaltadas únicas
-            document.querySelectorAll('.unique-highlight').forEach(area => area.style.display = 'none');
-
-            // Muestra el área seleccionada
-            const area = document.querySelector(`.unique-highlight-${color}`);
-            if (area) {
-                area.style.display = 'block';
-            }
-        }
-	  
+});	  
 	  let currentSlide = 0; // Índice de la imagen actual
 const slides = document.querySelectorAll('.gallery-slide');
 const totalSlides = slides.length;
