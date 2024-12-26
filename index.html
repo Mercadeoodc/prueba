@@ -744,19 +744,14 @@ body {
 }
 	  
 	 /*areas*/
-	  .container-11 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+	 	  .container-11 {
+  height: 40vh;
 }
 
 .image-container-11 {
   position: relative;
   width: 500px;
   height: 500px;
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
-	animation: containerPulse 1.5s infinite;
 }
 
 .image-11 {
@@ -773,7 +768,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 06px; /* Tamaño de la letra */
+  font-size: 10px; /* Tamaño de la letra */
   color: #111e15;
   font-weight: bold;
   opacity: 0;
@@ -819,13 +814,81 @@ body {
   }
 }
 
- @media @media (max-width: 768px) {
-  .image-container-11 {
-  position: relative;
-  width: 150px;
-  height: 150px;
+.square-11[data-letter="A"] {
+    top: 368px; left: 172px;
   }
+  .square-11[data-letter="B"] {
+    top: 411.5px; left: 326.5px;
   }
+  .square-11[data-letter="C"] {
+    top: 304.5px; left: 172px;
+  }
+  .square-11[data-letter="D"] {
+    top: 346.5px; left: 326.5px;
+  }
+  .square-11[data-letter="E"] {
+    top: 237px; left: 172px;
+  }
+  .square-11[data-letter="F"] {
+    top: 278px; left: 326.5px;
+  }
+  .square-11[data-letter="G"] {
+    top: 168px; left: 148.5px;
+  }
+  .square-11[data-letter="H"] {
+    top: 207px; left: 292px;
+  }
+  .square-11[data-letter="I"] {
+    top: 90px; left: 138px;
+  }
+  .square-11[data-letter="J"] {
+    top: 117px; left: 238px;
+  }
+  .square-11[data-letter="K"] {
+    top: 59px;
+    left: 213px;
+  }
+	  @media (max-width: 768px) {
+.image-container-11 {
+  width: 400px;
+  height: 400px;
+} 
+  .square-11[data-letter="A"] {
+    top: 292px; left: 136px;
+  }
+  .square-11[data-letter="B"] {
+    top: 329px; left: 259px;
+  }
+  .square-11[data-letter="C"] {
+    top: 242px; left: 136px;
+  }
+  .square-11[data-letter="D"] {
+    top: 278px; left: 259px;
+  }
+  .square-11[data-letter="E"] {
+    top: 188px; left: 136px;
+  }
+  .square-11[data-letter="F"] {
+    top: 221px; left: 259px;
+  }
+  .square-11[data-letter="G"] {
+    top: 134px; left: 117px;
+  }
+  .square-11[data-letter="H"] {
+    top: 164px; left: 232px;
+  }
+  .square-11[data-letter="I"] {
+    top: 70px; left: 108px;
+  }
+  .square-11[data-letter="J"] {
+    top: 93px; left: 189px;
+  }
+  .square-11[data-letter="K"] {
+    top: 46px;
+    left: 168px;
+  }
+	 }
+	  
 	   
 	  /* Contenedor principal del slider */
 .gallery-slider-container {
@@ -1118,17 +1181,17 @@ Saludable</p>
 		<div class="container-11">
   <div class="image-container-11">
     <img src="prueba.png" alt="Imagen" class="image-11">
-    <div class="square-11" style="top: 368px; left: 172px;" data-letter="A">A</div>
-    <div class="square-11" style="top: 411.5px; left: 326.5px;" data-letter="B">B</div>
-    <div class="square-11" style="top: 304.5px; left: 172px;" data-letter="C">C</div>
-    <div class="square-11" style="top: 346.5px; left: 326.5px;" data-letter="D">D</div>
-    <div class="square-11" style="top: 237px; left: 172px;" data-letter="E">E</div>
-    <div class="square-11" style="top: 278px; left: 326.5px;" data-letter="F">F</div>
-    <div class="square-11" style="top: 168px; left: 148.5px;" data-letter="G">G</div>
-    <div class="square-11" style="top: 207px; left: 292px;" data-letter="H">H</div>
-    <div class="square-11" style="top: 90px; left: 138px;" data-letter="I">I</div>
-    <div class="square-11" style="top: 117px; left: 238px;" data-letter="J">J</div>
-    <div class="square-11" style="top: 59px; left: 213px;" data-letter="K">K</div>
+	<div class="square-11" data-letter="A">A</div>
+    <div class="square-11" data-letter="B">B</div>
+    <div class="square-11" data-letter="C">C</div>
+    <div class="square-11" data-letter="D">D</div>
+    <div class="square-11" data-letter="E">E</div>
+    <div class="square-11" data-letter="F">F</div>
+    <div class="square-11" data-letter="G">G</div>
+    <div class="square-11" data-letter="H">H</div>
+    <div class="square-11" data-letter="I">I</div>
+    <div class="square-11" data-letter="J">J</div>
+    <div class="square-11" data-letter="K">K</div>
   </div>
 </div>
 	</section>
